@@ -92,7 +92,7 @@
         android:layout_height="21dp"
         android:layout_marginStart="80dp"
         android:layout_marginTop="800dp"
-        android:layout_marginBottom="118dp"
+        android:layout_marginBottom="119dp"
         android:text="Registrate"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="#ED4525"
