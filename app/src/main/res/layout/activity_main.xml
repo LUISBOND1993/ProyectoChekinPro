@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_image"
+    tools:context=".MainActivity">
+
+
+
+    <!-- Negro con 60% de transparencia -->
+
+    <View
+        android:id="@+id/darkOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60000000"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="94dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="255dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="227dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo_proyecto" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fuente"
+        android:text="“Control Inteligente, Acceso Fácil”"
+        android:textColor="#f3eef2"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.578" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="308dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="680dp"
+        android:backgroundTint="#ED4525"
+        android:text="Login"
+        android:textColor="#f3eef2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/darkOverlay" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="640dp"
+        android:fontFamily="@font/nunito"
+        android:text="¿No tienes una cuenta?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#f3eef2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.477" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="70dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="800dp"
+        android:layout_marginBottom="118dp"
+        android:text="Registrate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#ED4525"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/darkOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.669"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
